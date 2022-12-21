@@ -16,5 +16,5 @@ class Contato(models.Model):
     date_create = models.DateTimeField(default=timezone.now)
     descricao = models.TextField(blank=True)
     categoria = models.ForeignKey(Categoria,on_delete=models.DO_NOTHING)
-
+    mostrar = models.BooleanField(default=True)
     
