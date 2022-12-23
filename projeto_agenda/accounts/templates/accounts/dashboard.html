@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block conteudo %}
+{% include 'static/vendor/partials/_messages.html'%}
 
-    dashboard
-
+<h1 class="mb-3 mt-3">Olá {{ user.first_name}} {{ user.last_name }}</h1>
+<p>Seu nome de usuario é {{ user }}</p>
 {% endblock %}
